@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioskop Online</title>
+    <link rel="stylesheet" href="bioskop.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cinema DDI Logo">
+            <h1 style="font-family: 'Brush Script MT', cursive;">Cinema DDI</h1>
+            <span class="house"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html" target="_self">Beranda</a></li>
+                <li><a href="filem.html" target="_self">Film</a></li>
+                <li><a href="bioskop.html" target="_self">Bioskop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="led-effect">
+        <div class="led-strip top"></div>
+        <div class="led-strip right"></div>
+        <div class="led-strip bottom"></div>
+        <div class="led-strip left"></div>
+    </div>
+    <section class="cinema-list">
+        <h2>Bioskop Terdekat</h2>
+        <ul>
+            <li>
+                <h3>Bioskop 1</h3>
+                <p>Alamat: Jl.Bogor No. 10, Cicendo</p>
+                <p>Jam Operasional: 10:30 - 22:00</p>
+                <button>Lihat Jadwal</button>
+            </li>
+            <li>
+                <h3>Bioskop 2</h3>
+                <p>Alamat: Jl. Bandung No. 2019, Braga</p>
+                <p>Jam Operasional: 12:00 - 23:00</p>
+                <button>Lihat Jadwal</button>
+            </li>
+        </ul>
+    </section>
+    <section class="form-section">
+        <h2>Formulir Pemesanan Tiket</h2>
+        <form action="filem.html" method="get">
+            <table>
+                <tr>
+                    <td>Nama:</td>
+                    <td><input type="text" id="nama" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>No. HP:</td>
+                    <td><input type="tel" id="no_hp" name="no_hp"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Tiket:</td>
+                    <td><input type="number" id="jumlah_tiket" name="jumlah_tiket"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal:</td>
+                    <td><input type="date" id="tanggal" name="tanggal"></td>
+                </tr>
+                <tr>
+                    <td>Jam:</td>
+                    <td><input type="time" id="jam" name="jam"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Pesan Tiket">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <footer>
+        <div class="logo">
+          <div>
+            <a href="https://www.instagram.com/melatiyk9/"><img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="icon instagram" width="35%"></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/channel/UCImvuYzXiaiRd4hZGUKoVtw"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504965.png" alt="icon youtube" width="35%"></a>
+          </div>
+          <div>
+            <a href="https://wa.me/083865272322"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670133.png" alt="icon whatsapp" width="35%"></a>
+          </div>
+        </div>
+        <p>&copy;2024 DDI bioskop online</p>
+      </footer>
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>
